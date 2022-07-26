@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CheckVersionApp"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A CocoaPods library written in Swift."
 
   # This description is used to generate tags and improve search results.
@@ -37,8 +37,9 @@ Pod::Spec.new do |spec|
 
   spec.swift_versions = '4.2'
   spec.ios.deployment_target = "13.0"
+  spec.static_framework = true
 
-  spec.source       = { :git => "https://github.com/HoangTuEch/CheckVersionApp.git", :tag => "0.0.2" }
+  spec.source       = { :git => "https://github.com/HoangTuEch/CheckVersionApp.git", :tag => s.version.to_s }
 
   spec.source_files  = "CheckVersionApp/**/*.{h,m,swift}"
 
